@@ -17,6 +17,7 @@ function drawStrokeRect() {
   context.strokeRect(400, 350, 50, 100);
 }
 
+// 3
 function drawRectPath() {
   context.beginPath();
 
@@ -32,6 +33,7 @@ context.stroke();
 context.closePath();
 }
 
+// 4
 function drawBullsEye() {
   context.beginPath();
 
@@ -53,7 +55,7 @@ function drawBullsEye() {
 }
 
 
-
+// 5
 function drawText() {
   context.fillStyle = 'blue';
   context.font = '25px monospace';
