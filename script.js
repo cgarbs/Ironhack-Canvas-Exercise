@@ -3,12 +3,19 @@ console.log('JS file connected');
 const canvas = document.getElementById('box');
 const context = canvas.getContext('2d');
 
+console.log(canvas);
+console.log(context);
+
+// 1
 function drawFillRectangle() {
   context.fillStyle = 'purple';
   context.fillRect(21, 21, 120, 220);
 }
 
-drawFillRectangle();
+// 2
+function drawStrokeRect() {
+  context.strokeRect(400, 350, 50, 100);
+}
 
 function drawRectPath() {
   context.beginPath();
@@ -24,8 +31,6 @@ context.stroke();
 
 context.closePath();
 }
-
-drawRectPath();
 
 function drawBullsEye() {
   context.beginPath();
@@ -47,7 +52,6 @@ function drawBullsEye() {
   context.closePath();
 }
 
-drawBullsEye();
 
 
 function drawText() {
@@ -57,4 +61,3 @@ function drawText() {
 context.fillText('Ironhack', 195, 190);
 }
 
-drawText();
